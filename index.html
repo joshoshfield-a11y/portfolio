@@ -3,7 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taylor Christian Mattheisen — Portfolio</title>
+
+<!-- SEO Core -->
+<title>Taylor Christian Mattheisen — Systems Architect, Python Engineer & Hip-Hop Artist</title>
+<meta name="description" content="Taylor Christian Mattheisen (Skit / Dogbytes) — Self-taught systems architect, Python engineer, and hip-hop lyricist. Building multi-agent AI frameworks, game engines, and dark sonic landscapes.">
+<meta name="keywords" content="Taylor Christian Mattheisen, Skit, Dogbytes, Python engineer, systems architect, hip hop artist, game developer, AI frameworks, XANDRIA, UPE-78">
+<meta name="author" content="Taylor Christian Mattheisen">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://joshoshfield-a11y.github.io/portfolio/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Taylor Christian Mattheisen — Systems Architect & Hip-Hop Artist">
+<meta property="og:description" content="Self-taught systems architect, Python engineer, and hip-hop lyricist. Building multi-agent AI frameworks, game engines, and dark sonic landscapes.">
+<meta property="og:url" content="https://joshoshfield-a11y.github.io/portfolio/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Taylor Christian Mattheisen Portfolio">
+<meta property="profile:first_name" content="Taylor">
+<meta property="profile:last_name" content="Mattheisen">
+<meta property="profile:username" content="Skit">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taylor Christian Mattheisen — Systems Architect & Hip-Hop Artist">
+<meta name="twitter:description" content="Self-taught systems architect, Python engineer, and hip-hop lyricist. Building multi-agent AI frameworks, game engines, and dark sonic landscapes.">
+
+<!-- Structured Data: Person + WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://joshoshfield-a11y.github.io/portfolio/#person",
+      "name": "Taylor Christian Mattheisen",
+      "alternateName": ["Skit", "Dogbytes"],
+      "url": "https://joshoshfield-a11y.github.io/portfolio/",
+      "sameAs": [
+        "https://github.com/joshoshfield-a11y"
+      ],
+      "jobTitle": "Systems Architect",
+      "description": "Self-taught systems architect, Python engineer, and hip-hop lyricist building multi-agent AI frameworks, game engines, and dark sonic landscapes.",
+      "knowsAbout": [
+        "Python",
+        "Artificial Intelligence",
+        "Game Development",
+        "Hip Hop Music",
+        "Systems Architecture",
+        "Multi-Agent Frameworks"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://joshoshfield-a11y.github.io/portfolio/#website",
+      "url": "https://joshoshfield-a11y.github.io/portfolio/",
+      "name": "Taylor Christian Mattheisen Portfolio",
+      "publisher": {
+        "@id": "https://joshoshfield-a11y.github.io/portfolio/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://joshoshfield-a11y.github.io/portfolio/#webpage",
+      "url": "https://joshoshfield-a11y.github.io/portfolio/",
+      "name": "Taylor Christian Mattheisen — Portfolio",
+      "isPartOf": {
+        "@id": "https://joshoshfield-a11y.github.io/portfolio/#website"
+      },
+      "about": {
+        "@id": "https://joshoshfield-a11y.github.io/portfolio/#person"
+      }
+    }
+  ]
+}
+</script>
+
 <style>
   :root {
     --bg: #0a0a0f;
@@ -27,7 +100,6 @@
   a { color: var(--accent); text-decoration:none; }
   a:hover { text-decoration:underline; }
 
-  /* Hero */
   .hero {
     min-height: 100vh;
     display:flex;
@@ -96,7 +168,6 @@
   .btn-primary:hover { background: #00d4b0; transform: translateY(-2px); }
   .btn:hover { border-color: var(--accent); transform: translateY(-2px); }
 
-  /* Section base */
   section { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
   .section-title {
     font-size: 2rem;
@@ -120,7 +191,6 @@
     font-size: 1.05rem;
   }
 
-  /* About */
   .about-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -159,7 +229,6 @@
     border: 1px solid rgba(0,240,200,0.15);
   }
 
-  /* Projects */
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -225,7 +294,6 @@
   }
   .project-card .meta span { display:flex; align-items:center; gap: 0.3rem; }
 
-  /* Music */
   .music-section {
     background: var(--bg-elev);
     border-radius: 16px;
@@ -244,7 +312,6 @@
     margin: 0 auto 1.5rem;
   }
 
-  /* Contact / Footer */
   .contact {
     text-align:center;
     padding: 4rem 1.5rem;
@@ -274,7 +341,6 @@
     border-top: 1px solid var(--border);
   }
 
-  /* Scroll reveal */
   .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -288,7 +354,6 @@
 </head>
 <body>
 
-<!-- HERO -->
 <header class="hero">
   <div class="hero-content">
     <div class="aliases">Skit · Dogbytes</div>
@@ -303,7 +368,6 @@
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
   <h2 class="section-title">About</h2>
   <p class="section-sub">Self-taught. Mobile-first. Obsessed with systems that actually run.</p>
@@ -336,7 +400,6 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2 class="section-title">Selected Repositories</h2>
   <p class="section-sub">Public work. No simulations — all operational code.</p>
@@ -453,7 +516,6 @@
   </div>
 </section>
 
-<!-- MUSIC -->
 <section>
   <div class="music-section reveal">
     <h2>🎤 Dogbytes</h2>
@@ -470,7 +532,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <h2 class="section-title" style="justify-content:center;">Let's Build</h2>
   <p class="section-sub" style="text-align:center;">Open to collaboration on systems, games, music, and anything that pushes boundaries.</p>
@@ -491,7 +552,6 @@
 </footer>
 
 <script>
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) e.target.classList.add('visible');
