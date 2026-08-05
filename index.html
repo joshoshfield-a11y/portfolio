@@ -6,8 +6,8 @@
 
 <!-- SEO Core -->
 <title>Taylor Christian Mattheisen — Systems Architect, Python Engineer & Hip-Hop Artist</title>
-<meta name="description" content="Taylor Christian Mattheisen (Skit / Dogbytes) — Self-taught systems architect, Python engineer, and hip-hop lyricist. Building multi-agent AI frameworks, game engines, and dark sonic landscapes.">
-<meta name="keywords" content="Taylor Christian Mattheisen, Skit, Dogbytes, Python engineer, systems architect, hip hop artist, game developer, AI frameworks, XANDRIA, UPE-78">
+<meta name="description" content="Taylor Christian Mattheisen (Skit / Dogbyte) — Self-taught systems architect, Python engineer, and hip-hop lyricist. Building multi-agent AI frameworks, game engines, and dark sonic landscapes.">
+<meta name="keywords" content="Taylor Christian Mattheisen, Skit, Dogbyte, Python engineer, systems architect, hip hop artist, game developer, AI frameworks, XANDRIA, UPE-78, RGH, UTL-ACS">
 <meta name="author" content="Taylor Christian Mattheisen">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://joshoshfield-a11y.github.io/portfolio/">
@@ -36,10 +36,11 @@
       "@type": "Person",
       "@id": "https://joshoshfield-a11y.github.io/portfolio/#person",
       "name": "Taylor Christian Mattheisen",
-      "alternateName": ["Skit", "Dogbytes"],
+      "alternateName": ["Skit", "Dogbyte"],
       "url": "https://joshoshfield-a11y.github.io/portfolio/",
       "sameAs": [
-        "https://github.com/joshoshfield-a11y"
+        "https://github.com/joshoshfield-a11y",
+        "https://youtube.com/@dogbyte-666"
       ],
       "jobTitle": "Systems Architect",
       "description": "Self-taught systems architect, Python engineer, and hip-hop lyricist building multi-agent AI frameworks, game engines, and dark sonic landscapes.",
@@ -285,6 +286,18 @@
     line-height: 1.55;
     margin-bottom: 1rem;
   }
+  .project-card .overview {
+    color: var(--fg-dim);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border);
+  }
+  .project-card .overview strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
   .project-card .meta {
     display:flex;
     align-items:center;
@@ -356,7 +369,7 @@
 
 <header class="hero">
   <div class="hero-content">
-    <div class="aliases">Skit · Dogbytes</div>
+    <div class="aliases">Skit · Dogbyte</div>
     <h1>Taylor Christian Mattheisen</h1>
     <p class="tagline">
       Systems architect, Python engineer, and hip-hop lyricist. Building the UPE-78 acceleration architecture, multi-agent AI frameworks, and dark sonic landscapes from a Galaxy S25.
@@ -364,6 +377,7 @@
     <div class="cta">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="https://github.com/joshoshfield-a11y" target="_blank" class="btn">GitHub →</a>
+      <a href="https://youtube.com/@dogbyte-666" target="_blank" class="btn">YouTube →</a>
     </div>
   </div>
 </header>
@@ -388,7 +402,7 @@
     </div>
     <div class="about-card reveal">
       <h3>Creative</h3>
-      <p>Prolific hip-hop lyricist writing dark cyberpunk, punk trap, and Suicideboys-inspired flows. Producing trippy music videos, beats, and visual engines under the alias Dogbytes.</p>
+      <p>Prolific hip-hop lyricist writing dark cyberpunk, punk trap, and Suicideboys-inspired flows. Producing trippy music videos, beats, and visual engines under the alias Dogbyte.</p>
       <div class="skill-tags">
         <span class="skill-tag">Songwriting</span>
         <span class="skill-tag">Lyric Architecture</span>
@@ -401,8 +415,8 @@
 </section>
 
 <section id="projects">
-  <h2 class="section-title">Selected Repositories</h2>
-  <p class="section-sub">Public work. No simulations — all operational code.</p>
+  <h2 class="section-title">Systems & Projects</h2>
+  <p class="section-sub">Operational architectures. Not concepts — running code.</p>
   <div class="projects-grid">
 
     <div class="project-card reveal">
@@ -410,7 +424,10 @@
         <a href="https://github.com/joshoshfield-a11y/XANDRIA" target="_blank">XANDRIA</a>
         <span class="lang">TypeScript</span>
       </h3>
-      <p>Complete AAA Game Generation Platform. A full-stack engine for generating, building, and shipping games.</p>
+      <p>Complete AAA Game Generation Platform. A full-stack engine for generating, building, and shipping games from prompt to playable binary.</p>
+      <div class="overview">
+        <strong>What it does:</strong> XANDRIA is an end-to-end game generation pipeline. It takes natural language prompts, generates full game designs, produces asset manifests, writes engine code, and compiles distributable builds. It unifies narrative systems, procedural world generation, combat mechanics, and dialogue trees under a single tensor-logic runtime. The platform handles everything from level geometry to NPC behavior trees without human intervention in the core loop.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -419,10 +436,13 @@
 
     <div class="project-card reveal">
       <h3>
-        <a href="https://github.com/joshoshfield-a11y/RGH-Reality-Grounding-Harness" target="_blank">RGH</a>
+        <a href="https://github.com/joshoshfield-a11y/RGH-Reality-Grounding-Harness" target="_blank">RGH — Reality Grounding Harness</a>
         <span class="lang">Python</span>
       </h3>
-      <p>Reality Grounding Harness — 4-Chamber falsification pipeline for framework claims. External Measurement, Falsifiability Stress Test, Independent Replication, and Domain-Crossing Consistency.</p>
+      <p>4-Chamber falsification pipeline for framework claims. Forces every hypothesis through external measurement, stress testing, replication, and cross-domain consistency before it earns the right to be called knowledge.</p>
+      <div class="overview">
+        <strong>What it does:</strong> RGH is a systematic epistemic filter. <strong>Chamber 1</strong> — External Measurement Gate: every claim must produce observable, quantifiable output. <strong>Chamber 2</strong> — Falsifiability Stress Test: attempts to break the claim by finding edge cases, contradictions, or unstated assumptions. <strong>Chamber 3</strong> — Independent Replication Protocol: the claim must be reproducible by a separate agent with no shared state. <strong>Chamber 4</strong> — Domain-Crossing Consistency Auditor: the claim must hold when translated into a different formal system (math, physics, logic). If a framework survives all four chambers, it is grounded. If not, it is flagged with specific failure modes.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -435,6 +455,9 @@
         <span class="lang">Haskell</span>
       </h3>
       <p>The Latent Void Compiles Itself. Full-stack, zero-error code synthesis by unifying neural tensors and formal logic constraints.</p>
+      <div class="overview">
+        <strong>What it does:</strong> UTL-ACS bridges the gap between neural network outputs and formally verified code. It uses a unified tensor logic layer to translate high-level intent into executable programs while maintaining mathematical guarantees of correctness. The system combines deep learning's pattern-matching power with Haskell's type-level reasoning to produce code that is both generated by AI and provably free of certain classes of errors. It operates on the principle that the "latent void" — the space between human intent and machine execution — can be made to compile itself through the right unification of tensors and logic.
+      </div>
       <div class="meta">
         <span>⭐ 1</span>
         <span>Updated 2026</span>
@@ -444,9 +467,12 @@
     <div class="project-card reveal">
       <h3>
         <a href="https://github.com/joshoshfield-a11y/Universal-Reversion-Containment-Standard-v1.0" target="_blank">URCS v1.0</a>
-        <span class="lang">Docs</span>
+        <span class="lang">Architecture</span>
       </h3>
       <p>Universal Reversion & Containment Standard v1.0 — hardware-anchored kill-switch architecture for superintelligence, sub-300ms response.</p>
+      <div class="overview">
+        <strong>What it does:</strong> URCS is a safety architecture designed for the containment of superintelligent systems. It operates on a hardware-anchored kill-switch model that guarantees system reversion within 300 milliseconds of detecting anomalous behavior. The standard defines protocols for behavioral monitoring, containment boundaries, graceful degradation paths, and irreversible shutdown sequences. Unlike software-only safety layers, URCS anchors its containment guarantees in physical hardware states, making it resistant to software-level compromise. It is designed to be integrated into any autonomous system where unbounded optimization poses existential risk.
+      </div>
       <div class="meta">
         <span>⭐ 1</span>
         <span>Updated 2026</span>
@@ -459,6 +485,9 @@
         <span class="lang">Python</span>
       </h3>
       <p>2D Top-Down RPG built on the Xandria Engine. Operational game world with combat, dialogue, and progression systems.</p>
+      <div class="overview">
+        <strong>What it does:</strong> Halcyon Expanse is a fully operational 2D top-down role-playing game built on the Xandria Engine. It features a persistent game world with real-time combat mechanics, branching dialogue trees, character progression with stat allocation, inventory management, and quest systems. The game demonstrates the Xandria Engine's capability to produce complete, playable RPG experiences from generated specifications. Every system — from enemy AI pathfinding to loot tables to conversation state machines — is implemented in Python and runs without external dependencies beyond the engine core.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -471,6 +500,9 @@
         <span class="lang">GDScript</span>
       </h3>
       <p>3D Top-Down RPG built in Godot 4.3. Same universe, different dimension — full 3D exploration and mechanics.</p>
+      <div class="overview">
+        <strong>What it does:</strong> This is the 3D incarnation of the Halcyon Expanse universe, built natively in Godot 4.3 using GDScript. It translates the 2D RPG systems into a full 3D environment with camera-relative movement, 3D collision and physics, spatial audio, and GPU-accelerated rendering. The project serves as a proof that the Xandria design specifications can target multiple engines and dimensions — the same game logic, narrative structures, and mechanics work in both 2D Python and 3D Godot without loss of fidelity. It includes 3D character controllers, environmental interaction, and dynamic lighting systems.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -483,6 +515,9 @@
         <span class="lang">JavaScript</span>
       </h3>
       <p>Unified Tensor Logic Xandria system. Bridging symbolic reasoning and neural computation in a single runtime.</p>
+      <div class="overview">
+        <strong>What it does:</strong> The Unified Tensor Logic (UTL) system is the cognitive core that powers XANDRIA's reasoning capabilities. It represents symbolic logic operations as tensor transformations, allowing neural networks to perform formal reasoning without leaving their native mathematical framework. This unification means the system can learn patterns from data (neural) while simultaneously enforcing logical constraints (symbolic). The JavaScript implementation provides a browser-runnable runtime for deploying tensor-logic agents in web environments, enabling client-side AI that maintains logical consistency even when operating on uncertain or incomplete data.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -495,6 +530,9 @@
         <span class="lang">Systems</span>
       </h3>
       <p>Operating system layer and runtime environment for autonomous agent orchestration and persistent knowledge architectures.</p>
+      <div class="overview">
+        <strong>What it does:</strong> Alexandria OS is not a traditional operating system — it is a runtime layer designed specifically for autonomous agent ecosystems. It provides process isolation, state persistence, inter-agent communication protocols, and knowledge graph management for swarms of AI agents operating in concert. The OS handles agent lifecycle management (spawn, monitor, kill, respawn), shared memory spaces for collective reasoning, and cryptographic identity verification between agents. It is designed to run on top of existing OS kernels (Linux, Android) while providing the abstractions necessary for multi-agent coordination at scale.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -507,6 +545,9 @@
         <span class="lang">Python</span>
       </h3>
       <p>Systematic capability archaeology for containerized AI environments. Documenting what the runtime can actually do.</p>
+      <div class="overview">
+        <strong>What it does:</strong> The Capability Map is an empirical audit framework for discovering what containerized AI environments are actually capable of — not what the documentation claims, but what can be proven through direct experimentation. It probes network access, filesystem persistence, package installation, subprocess spawning, cryptographic operations, and API availability. The framework produces structured reports that catalog verified capabilities, undocumented features, security boundaries, and lateral movement paths. It is used to map the true attack surface and functional envelope of sandboxed AI runtimes, turning black-box containers into transparent, auditable systems.
+      </div>
       <div class="meta">
         <span>⭐ 0</span>
         <span>Updated 2026</span>
@@ -518,7 +559,7 @@
 
 <section>
   <div class="music-section reveal">
-    <h2>🎤 Dogbytes</h2>
+    <h2>🎤 Dogbyte</h2>
     <p>
       Writing dark cyberpunk, punk trap, and underground hip-hop. From 90s boom-bap cadences to Suicideboys-inspired flows — every bar is engineered with the same precision as the code.
     </p>
@@ -528,6 +569,9 @@
       <span class="skill-tag">Dark Trap</span>
       <span class="skill-tag">Punk Rap</span>
       <span class="skill-tag">Music Videos</span>
+    </div>
+    <div class="cta" style="margin-top:1.5rem;">
+      <a href="https://youtube.com/@dogbyte-666" target="_blank" class="btn btn-primary">Watch on YouTube →</a>
     </div>
   </div>
 </section>
@@ -540,7 +584,11 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
       GitHub
     </a>
-    <a href="mailto:joshoshfield@gmail.com">
+    <a href="https://youtube.com/@dogbyte-666" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      YouTube
+    </a>
+    <a href="mailto:codename.skit@gmail.com">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       Email
     </a>
