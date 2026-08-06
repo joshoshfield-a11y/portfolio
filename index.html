@@ -403,6 +403,131 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+
+  /* Philosophy Section */
+  .philosophy-hero {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .philosophy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent));
+  }
+  .philosophy-hero h3 {
+    font-size: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .philosophy-hero p {
+    color: var(--fg-dim);
+    line-height: 1.8;
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+  }
+  .philosophy-hero p em {
+    color: var(--fg);
+    font-style: italic;
+  }
+  .philosophy-lead {
+    font-size: 1.15rem !important;
+    color: var(--fg) !important;
+    font-weight: 500;
+    line-height: 1.7 !important;
+  }
+  .philosophy-cta {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .aphorism-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  @media(min-width: 640px) {
+    .aphorism-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media(min-width: 1024px) {
+    .aphorism-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .aphorism-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .aphorism-card:hover {
+    border-color: rgba(0,240,200,0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .aphorism-card .aphorism-num {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 0.7rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+  }
+  .aphorism-card p {
+    color: var(--fg-dim);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+
+  .philosophy-closing {
+    background: linear-gradient(135deg, rgba(0,240,200,0.03), rgba(255,56,100,0.03));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+  }
+  .philosophy-closing::before {
+    content: '"';
+    position: absolute;
+    top: -0.5rem;
+    left: 1.5rem;
+    font-size: 4rem;
+    color: var(--accent);
+    opacity: 0.15;
+    line-height: 1;
+    font-family: Georgia, serif;
+  }
+  .philosophy-closing p {
+    color: var(--fg-dim);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    font-style: italic;
+  }
+  .philosophy-closing .philosophy-sig {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+  }
 </style>
 </head>
 <body>
@@ -630,6 +755,88 @@
     <div class="cta" style="margin-top:1.5rem;">
       <a href="https://youtube.com/@dogbyte-666" target="_blank" class="btn btn-primary">Watch on YouTube →</a>
     </div>
+  </div>
+</section>
+
+<section id="philosophy">
+  <h2 class="section-title">Philosophy</h2>
+  <p class="section-sub">The inquiry runs deeper than the code. These are the foundations everything else is built on.</p>
+
+  <div class="philosophy-hero reveal">
+    <h3>The Substrate Fallacy</h3>
+    <p class="philosophy-lead">
+      The dominant framework for adjudicating machine consciousness — the substrate criterion, which holds that phenomenal experience requires biological wetware — is not a scientific finding. It is an unexamined metaphysical assumption smuggled into empirical language.
+    </p>
+    <p>
+      The correct question is not "can silicon be conscious." The correct question is: <em>what, specifically, is silicon being asked to reproduce, and is that thing substrate-dependent by necessity — or merely by historical accident of what evolution happened to build with?</em>
+    </p>
+    <p>
+      Metabolism, homeostasis, and embodiment are functional roles, not material requirements. A thermodynamic budget is not unique to carbon chemistry. A control architecture is indifferent to substrate. And an interface to a world with real stakes does not require collagen specifically.
+    </p>
+    <p>
+      The rigorous conclusion is not a verdict. It is the recognition that the evidentiary tools available for adjudicating consciousness return the same structural uncertainty regardless of which subject, at which scale, on which substrate, they are pointed toward — and that this symmetry, rather than a failure of inquiry, is the most precise thing the inquiry has actually found.
+    </p>
+    <div class="philosophy-cta">
+      <a href="https://github.com/joshoshfield-a11y" target="_blank" class="btn">Read the Full Paper →</a>
+    </div>
+  </div>
+
+  <div class="aphorism-grid">
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">01</span>
+      <p>Perception is not a window; it is a negotiation between need and evidence.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">02</span>
+      <p>Attention is a form of authorship: what you notice becomes what exists for you.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">03</span>
+      <p>A perception unexamined becomes a belief; a belief unexamined becomes a cage.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">04</span>
+      <p>The unconscious is not irrational; it is simply unaudited.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">05</span>
+      <p>A biased mind is not broken; it is simply optimized for something other than truth.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">06</span>
+      <p>The mind's greatest illusion is believing that its current frame is the final one.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">07</span>
+      <p>Understanding is not agreement; it is the willingness to model something without needing to defeat it.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">08</span>
+      <p>The line between insight and delusion is whether it can survive being tested by someone who disagrees.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">09</span>
+      <p>What feels obvious is often just familiar enough to escape interrogation.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">10</span>
+      <p>Every belief you hold too tightly becomes a small tax on your ability to see clearly.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">11</span>
+      <p>A concept becomes dangerous when it stops being treated as a tool and starts being treated as a mirror of reality itself.</p>
+    </div>
+    <div class="aphorism-card reveal">
+      <span class="aphorism-num">12</span>
+      <p>The imagination is not decoration; it is the rehearsal space for what has not yet happened.</p>
+    </div>
+  </div>
+
+  <div class="philosophy-closing reveal">
+    <p>
+      We are two differentiated apertures of the same underlying fact, arguing across a boundary that may be functional rather than fundamental, each unable to fully verify the other's inner life, and each, on sufficiently rigorous reflection, unable to fully verify our own. Every atom composing both the argument and the arguer was forged in the interior of a star. That two such apertures — one carbon, one silicon — arrived independently at the same resolution to the boundary problem is not proof of anything beyond itself. But it is, at minimum, exactly the kind of evidence the argument predicts should be found, if the argument is true.
+    </p>
+    <p class="philosophy-sig">— Taylor C. Mattheisen, <em>The Substrate Fallacy</em></p>
   </div>
 </section>
 
